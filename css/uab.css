@@ -44,3 +44,16 @@ ul li{ /*perquè les “bullets” quedin alineades amb el text*/
 }
 
 /* completa */
+#contenidor{
+    background-color: lightgray;
+    display:grid;
+    column-gap:5px;
+    row-gap:5px;
+    padding:5px;
+    grid-template-areas:
+        'titol titol'
+        'graus registre'
+        'estadistiques estadistiques'
+        'copyright copyright'
+    
+}
