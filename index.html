@@ -39,36 +39,35 @@
                 </section>
             </div>
             <!-- SECCIÓ 3 - Formulari de registre -->
-            <div style="grid-area: registre;">
-                <section> <!-- completa -->
-                    <header class="fancy">
-                        <h3>Registra't com a alumne en un grau: </h3>
-                    </header>
-                    <p> Si us plau facilita'ns les teves dades </p>
-                    <div id="formDiv">
-                        <form method="post" action="" onsubmit="return confirmaRegistre();">
-                            Nom complet: <input type="text" name="nom" /><br />
-                            Password: <input type="password" name="clau" /><br />
-                            Grau:
-                            <select name="grau"> <!-- completa -->
-                                <option value="I">Enginyeria Informàtica</option>
-                                <option value="T">Enginyeria de Sistemes de Telecomunicació</option>
-                                <option value="E">Enginyeria Electrònica de Telecomunicació</option>
-                                <option value="Q">Enginyeria Química</option>
-                            </select>
-                            <p>Tria la menció que t'atreu més:<p>
-                            <select name="mencio"> <!-- completa -->
-                                <option value="S">Enginyeria del software</option>
-                                <option value="A">Enginyeria de computadors</option>
-                                <option value="C">Computació</option>
-                                <option value="I">Tecnologies de la informació</option>
-                            </select>
-                            <br /><br />
-                            <input type="submit" value="Registrar-me" />
-                        </form>
-                    </div>
-                </section>
-            </div>
+            <section> <!-- completa -->
+                <header class="fancy">
+                    <h3>Registra't com a alumne en un grau: </h3>
+                </header>
+                <p> Si us plau facilita'ns les teves dades </p>
+                <div id="formDiv">
+                    <form method="post" action="" onsubmit="return confirmaRegistre();">
+                        Nom complet: <input type="text" name="nom" /><br />
+                        Password: <input type="password" name="clau" /><br />
+                        Grau:
+                        <select name="grau"> <!-- completa -->
+                            <option value="1">Enginyeria Informàtica</option>
+                            <option value="2">Enginyeria de Sistemes de Telecomunicació</option>
+                            <option value="3">Enginyeria Electrònica de Telecomunicació</option>
+                            <option value="4">Enginyeria Química</option>
+                        </select>
+                        <p>Tria la menció que t'atreu més:<p>
+                        <select name="mencio"> <!-- completa -->
+                            <option value="1">Enginyeria del software</option>
+                            <option value="2">Enginyeria de computadors</option>
+                            <option value="3">Computació</option>
+                            <option value="4">Tecnologies de la informació</option>
+                        </select>
+                        <br /><br />
+                        <input type="submit" value="Registrar-me" />
+                    </form>
+                </div>
+                <hr />
+            </section>
             <!-- SECCIÓ 4 -  Estadístiques de matriculació per grau -->
             <div style="grid-area: estadistiques;">
                 <section class="statistics"> <!-- completa -->
