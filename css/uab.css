@@ -25,6 +25,8 @@ section.statistics header h3{
 table, th, td{
     border: 1px solid black;
     border-collapse: collapse;
+    margin-left:auto;
+    margin-right:auto;
 }
 
 p.important{
@@ -54,6 +56,50 @@ ul li{ /*perquè les “bullets” quedin alineades amb el text*/
         'titol titol'
         'graus registre'
         'estadistiques estadistiques'
-        'copyright copyright'
-    
+        'copyright copyright';
+}
+
+#contenidor div{
+    padding:5px;
+    background-color:white;
+    margin:2px;
+    text-align:center;
+    vertical-align: middle;
+}
+
+#contenidor div footer p{
+    text-align:right;
+}
+
+@media screen and (max-width:600px)
+{
+    #contenidor{
+        grid-template-areas:
+            'titol'
+            'graus'
+            'registre'
+            'estadistiques'
+            'copyright'
+        ;
+    }
+    #contenidor div{
+        text-align:left;
+    }
+
+}
+
+@keyframes uabLogoRotateExpand{
+    0% {scale:0;
+        transform:rotate(0deg);}
+    100% {scale:100px;
+        transform:rotate(360deg)}
+}
+
+#uabLogo{
+    animation-name: uabLogoRotateExpand;
+    animation-duration: 5s;
+    animation-delay: 1s;
+    animation-timing-function:
+    linear;
+
 }
