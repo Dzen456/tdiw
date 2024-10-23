@@ -3,7 +3,9 @@
     <head>
         <meta charset="utf-8"/>
         <title> UAB/Enginyeria </title>
-	<link rel="stylesheet" type="text/css" href="css/uab.css">
+	    <link rel="stylesheet" type="text/css" href="css/uab.css">
+        <script src="js/funcions.js"> </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
 	<!-- completa -->
     </head>
     <body>
@@ -44,19 +46,21 @@
                 </header>
                 <p> Si us plau facilita'ns les teves dades </p>
                 <div id="formDiv">
-                    <form method="post" action="registre.php">
+                    <form method="post" action="registre.php" onchange="carregaMencions()">
                         Nom complet: <input type="text" name="nom" /><br />
                         Password: <input type="password" name="clau" /><br />
                         Grau:
                         <select name="grau" id="graus">
                         <?php
                             //completa
+                            include_once __DIR__ . "./graus.php";
                         ?>
                         </select>
                         <p>Tria la menció que t'atreu més:<p>
                         <select name="mencio" id="mencions">
                         <?php
                             //completa
+                            include_once __DIR__ . "./mencions.php";
                         ?>
                         </select>
                         <br /><br />
